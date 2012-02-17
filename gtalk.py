@@ -1,12 +1,8 @@
 ﻿#!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-import tornado.ioloop
-import tornado.httpclient
-import urllib
+import tornado
 import json
-import pika
-import sys
 import MySQLdb
 import logging
 import os
@@ -33,7 +29,6 @@ connMySQL = MySQLdb.connect(options.mysql_hostname, options.mysql_user, options.
 ############################################################################################################################
 
 class SampleBot(GtalkRobot):
-
    
     def command_100_default(self, user, message, args):
         '''.*?(?s)(?m)'''
