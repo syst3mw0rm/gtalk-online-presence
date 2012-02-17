@@ -16,7 +16,7 @@ class GtalkRobot:
     ########################################################################################################################
     conn = None
     show = "available"
-    status = "PyGtalkRobot"
+    status = ""
     commands = None
     command_prefix = 'command_'
     GO_TO_NEXT_COMMAND = 'go_to_next'
@@ -48,6 +48,8 @@ class GtalkRobot:
             show = "dnd"
         elif show == "away" or show == "idle" or show == "off" or show == "out" or show == "xa":
             show = "xa"
+	elif show == "unavailable":
+            show ="unavailable"
         else:
             show = "available"
         

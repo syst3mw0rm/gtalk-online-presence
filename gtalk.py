@@ -46,5 +46,5 @@ class SampleBot(GtalkRobot):
 ############################################################################################################################
 if __name__ == "__main__":
     bot = SampleBot()
-    bot.setState('available', "Simple Gtalk Robot")
+    bot.setState('xa', "")
     bot.start(options.gtalk_username, options.gtalk_password)
